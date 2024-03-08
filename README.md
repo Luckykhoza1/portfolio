@@ -13,7 +13,7 @@ Within this portfolio, you'll find a range of projects encompassing various aspe
 I leverage a variety of technologies to bring my projects to life, including but not limited to:
 
 - Python and Django
-- Java
+- Java and JavaFX
 - C++
 - HTML5 & CSS3
 - Bootstrap
