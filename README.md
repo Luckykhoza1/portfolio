@@ -6,7 +6,7 @@ Hello and thank you for visiting my portfolio! I'm Lucky Khoza, a passionate and
 
 Within this portfolio, you'll find a range of projects encompassing various aspects of full-stack web and app development, from front-end design and user experience to back-end functionality and database management. Each project is a testament to my commitment to learning, growth, and excellence in the tech industry. Below is a link of my live portfolio.
 -   https://luckykhoza1.github.io/portfolio/Portfolio%20Page/
--   https://luckykhoza1.github.io/portfolio/TimeTourGit/
+-   https://luckykhoza1.githubio/portfolio/TimeTourGit/
 
 ## Technologies Used
 
