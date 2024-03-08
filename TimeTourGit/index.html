@@ -77,7 +77,7 @@
             .value
             .trim();
           const apiKey = 'DN0VM4P7LX0B'; // Make sure to replace this with your actual API key
-          const apiBaseUrl = 'http://api.timezonedb.com/v2.1/convert-time-zone';
+          const apiBaseUrl = 'https://api.timezonedb.com/v2.1/convert-time-zone';
           const url = `${apiBaseUrl}?key=${apiKey}&format=json&from=${fromZone}&to=${toZone}`;
 
           fetch(url)
