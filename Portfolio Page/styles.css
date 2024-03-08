@@ -1,0 +1,48 @@
+
+
+body {
+    font-family: 'Montserrat';
+    background-color: #C7C8CC;
+    color: black;
+    letter-spacing: 10%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0
+}
+
+.nav-link {
+    /* font-family: 'Montserrat'; */
+    color: black;
+    margin: 1%;
+    font-size: large;
+    font-weight: 400;
+
+}
+
+.nav-link:hover {
+    color: blue;
+
+}
+
+.projectCard:hover {
+    /* make them pop forward a bit */
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    border: black solid 1px;
+}
+
+.col {
+    margin: 2%;
+}
+
+.container {
+    background-color: #f4f4f4;
+    border-radius: 25px;
+}
+
+.fa:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s;
+}
