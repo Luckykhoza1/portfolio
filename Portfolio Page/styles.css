@@ -2,14 +2,16 @@
 
 body {
     font-family: 'Montserrat';
-    background-color: #C7C8CC;
+    background-color: skyblue;
     color: black;
     letter-spacing: 10%;
 }
 
+
+
 .navbar {
     position: fixed;
-    top: 0
+    top: 0;
 }
 
 .nav-link {
@@ -45,4 +47,7 @@ body {
 .fa:hover {
     transform: scale(1.5);
     transition: transform 0.3s;
+}
+.custom-border-radius {
+border-radius: 15px;
 }
