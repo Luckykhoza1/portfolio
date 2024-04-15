@@ -1,76 +1,79 @@
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
 
-</head>
-
-<body>
-  <div class="container d-flex justify-content-center" style="margin-bottom: 15%;">
-    <div class="navbar mt-4 justify-content-center" style="width: 100%; margin-bottom: 5%; ">
-      <nav class="nav d-flex justify-content-center bg-white" style="width: 50%; border-radius: 25px; ">
-        <a class="nav-link active" aria-current="page" href="index.html">PROJECTS</a>
-        <a class="nav-link " href="#">ABOUT</a>
-        <a class="nav-link " href="#">CONTACT</a>
-      </nav>
+<body class="container mx-auto">
+  <div class="flex justify-center text-center text-2xl p-5 font shadow-xl">
+      <ul class="p-2 overflow-hidden bg-blue-900 grid grid-cols-12 rounded-xl">
+        <li class="col-span-5 hover:font-bold rounded-xl hover:bg-yellow-500">
+          <a href="about.html">ABOUT</a>
+        </li>
+        <li
+          class="col-span-5 col-start-7 hover:font-bold rounded-xl hover:bg-yellow-500 px-2"
+        >
+          <a href="index.html">PROJECTS</a>
+        </li>
+      </ul>
     </div>
+
+  <!-- picuture and bio -->
+
+  <div class="grid grid-cols-12 gap-5 p-2" >
+      <img src="media/Lucky.jpg" class="col-span-12 sm:col-span-5 rounded-3xl object-fill h-full w-full" alt="Lucky Khoza Image">
+
+
+      <div class="col-span-12 sm:col-span-7 text-center rounded-xl bg-black" >
+        <h1 class="text-center text-4xl font-bold mt-2">Lucky Khoza</h1>
+        <p class="text-start sm:text-xl antialiased m-2 p-2 tracking-widest" style="line-height: 2">
+          I am senior student at Whitman College and I will be graduating in May 2024 with a Bachelor of Arts Degree in Computer Science. I am passionate about developing desktop and web applications that meet the desired specifications. I haved worked on various projects which are not available to the public. I am currently working on a todo app using <span class="text-green-400 font-bold">Django</span> and <span class="text-blue-400 font-bold">HTMX</span>. View the live demo using this <a class="font-bold text-red-400" href="https://htmx-django1.up.railway.app/" target="_blank">link</a> - it is still a work in progress. I wrote Zero JavaScript for this project. In addition, I am working on an alumni directory and blog application for a non-profit organization. More information about this will come soon.
+          <span class="text-yellow-400 font-bold">If you are interested in working together or are hiring, please contact me. I would love to connect.</span>
+        </p>
+        <button>
+          <a a href="https://www.linkedin.com/in/lucky-khoza/" class="fa fa-linkedin p-2 me-5 text-4xl text-green-400" target="_blank"></a>
+        </button>
+        <button>
+          <a href="mailto:khozal@whitman.edu" class="fa fa-envelope p-2 m-1 text-4xl text-green-400" target="_blank"></a>
+        </button>
+        <button>
+          <a href="https://github.com/Luckykhoza1?tab=repositories" class="fa fa-github p-2 ms-5 text-4xl text-green-400" target="_blank"></a>
+        </button>
+
+
+
+
+      </div>
   </div>
 
-  <!-- picture and bio -->
-  <div class="container-fluid d-flex justify-content-center">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-6 m-4">
-        <img src="media/Lucky.jpg" class="img-fluid w-100 custom-border-radius" alt="Lucky Khoza">
-      </div>
 
-      <div class="col m-4 p-4 bg-white custom-border-radius">
-        <div class="text-center">
-          <h1 class="fw-bolder">Lucky Khoza</h1>
-        </div>
-        <div class="mt-4">
-          <p>
-
-            I'm a full stack developer passionate about building web applications that make a difference, with a particular affinity for Django. My journey has also taken me through diverse technologies, as seen in my projects. Inspired by pioneers like Tesla and Galileo, I'm committed to creating software that simplifies life and leaves a positive impact, believing in the power of technology to enhance our daily routines.
-          </p>
-        </div>
-        <div class="row m-4 p-4">
-
-          <div class="col-md-4 text-center">
-            <p>
-              <a href="https://www.linkedin.com/in/lucky-khoza/" class="fa fa-linkedin border p-3 fs-2 custom-border-radius" target="_blank"></a>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p>
-              <a href="mailto:khozal@whitman.edu" target="" class="fa fa-envelope border p-3 fs-2 custom-border-radius"></a>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p>
-              <a href="https://github.com/Luckykhoza1?tab=repositories" class="fa fa-github border p-3 fs-2 custom-border-radius" target="_blank"></a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-</div>
+  
 </body>
 
-<footer class="text-center p-4 m-4">
-<a href="https://fontawesome.com/" class="text-decoration-none text-black" title="play button icons">Icons imported from Font Awesome Flaticon</a>
-<p>© 2024 Lucky Khoza</p>
-</footer>
+<footer class="text-center p-3">
+    <a href="https://fontawesome.com/" class=" " title="play button icons"
+      >Icons imported from Font Awesome Flaticon</a
+    >
+    <p>© 2024 Lucky Khoza</p>
+  </footer>
 
 </html>
