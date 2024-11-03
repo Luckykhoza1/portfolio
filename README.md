@@ -27,6 +27,6 @@ I leverage a variety of technologies to bring my projects to life, including but
 I'm always on the lookout for new opportunities, collaborations, or just a good tech conversation. Feel free to connect with me on:
 
 - LinkedIn: https://www.linkedin.com/in/lucky-khoza
-- Email: khozal@whitman.edu
+- Email: Luckyltk9@gmail.com 
 
 Thank you for visiting my portfolio. I'm excited to share my journey and creations with you. Let's create something amazing together!
