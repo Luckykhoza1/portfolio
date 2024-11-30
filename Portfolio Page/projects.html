@@ -1,318 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome CDN -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: 'Montserrat', sans-serif;
-      }
-    </style>
+
+    <title>Portfolio</title>
   </head>
 
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-900 text-white font-roboto antialiased">
+
     <!-- Navigation -->
-    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
-      <div class="container mx-auto flex justify-between items-center py-4 px-5">
-        <h1 class="text-2xl font-bold">Portfolio</h1>
-        <ul class="hidden md:flex space-x-6 text-lg">
-          <li>
-            <a
-              href="index.html"
-              class="hover:text-yellow-400 transition duration-300"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="projects.html"
-              class="hover:text-yellow-400 transition duration-300"
-              >Projects</a
-            >
-          </li>
-        </ul>
-        <button
-          id="menu-button"
-          class="block md:hidden text-2xl focus:outline-none"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
+    <nav class="bg-blue-900 p-5 shadow-lg">
+      <ul class="flex justify-center gap-12 text-xl">
+        <li class="hover:text-yellow-400">
+          <a href="index.html">About</a>
+        </li>
+        <li class="hover:text-yellow-400">
+          <a href="projects.html">Projects</a>
+        </li>
+      </ul>
     </nav>
-    <div
-      id="mobile-menu"
-      class="hidden md:hidden bg-blue-900 text-white p-4 space-y-4"
-    >
-      <a href="index.html" class="block hover:text-yellow-400">About</a>
-      <a href="projects.html" class="block hover:text-yellow-400">Projects</a>
-    </div>
 
     <!-- Projects Section -->
-    <section class="container mx-auto mt-8 px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+    <div class="container mx-auto px-5 py-12">
 
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Project Card -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="media/talkingTrees.png"
-            alt="Talking Trees"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-bold">Talking Trees (AI)</h3>
-            <p class="text-gray-700 mt-2">
-              A Django app turning a 6000 x 45 Excel into an interactive web app
-              for Whitman College, using SQL, Django Rest Framework, and more.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a
-                href="https://github.com/LuckyKhoza-crypto/Talking-Trees-AI"
-                target="_blank"
-                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- More Project Cards -->
-        <!-- Add similar blocks for each project -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="media/plantieImage.png"
-            alt="Plantie"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-bold">Plantie</h3>
-            <p class="text-gray-700 mt-2">
-              A social app for plant lovers, featuring Django Rest Framework and
-              Google Authentication.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a
-                href="https://luckykhoza.pythonanywhere.com/"
-                target="_blank"
-                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                ><i class="fas fa-link"></i> Live</a
-              >
-            </div>
-          </div>
+      <!-- Project 0 -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/talkingTrees.png" alt="Talking Trees" />
+        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
+          <h2 class="text-2xl font-bold mb-4">Talking Trees (AI)</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            This Django app turns a 6000 x 45 Excel sheet into an interactive web app for Whitman College. It uses SQL, Django Rest Framework, Canva SSO, ChatGPT Turbo API, and an Arc GIS map for visualization.
+            <span class="font-bold">Bootstrap</span> is used for the frontend. Watch the demo or access the code below.
+          </p>
+          <a href="https://github.com/LuckyKhoza-crypto/Talking-Trees-AI" target="_blank" class="text-2xl text-yellow-400">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
       </div>
-    </section>
-</a>
-              <a
-                href="https://your-live-site-link.com"
-                target="_blank"
-                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
 
-        <!-- Project 2: Python Full Stack Development -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="media/pythonFullStack.png"
-            alt="Python Full Stack"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-bold">Python Full Stack Development</h3>
-            <p class="text-gray-700 mt-2">
-              An extensive Python project that covers full-stack development with
-              frameworks like Django, React, and REST APIs, integrating them into a
-              smooth web application.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a
-                href="https://github.com/LuckyKhoza-crypto/python-full-stack"
-                target="_blank"
-                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://your-live-site-link.com"
-                target="_blank"
-                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: Django Blog -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="media/djangoBlog.png"
-            alt="Django Blog"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-bold">Django Blog</h3>
-            <p class="text-gray-700 mt-2">
-              A simple yet powerful blogging platform built using Django, with user
-              authentication, commenting system, and a rich admin panel.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a
-                href="https://github.com/LuckyKhoza-crypto/django-blog"
-                target="_blank"
-                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://your-live-site-link.com"
-                target="_blank"
-                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4: Tableau Data Dashboard -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="media/tableauDashboard.png"
-            alt="Tableau Data Dashboard"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-bold">Tableau Data Dashboard</h3>
-            <p class="text-gray-700 mt-2">
-              An interactive and dynamic data visualization project built using
-              Tableau, which visualizes key business metrics and trends.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a
-                href="https://github.com/LuckyKhoza-crypto/tableau-dashboard"
-                target="_blank"
-                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://your-live-site-link.com"
-                target="_blank"
-                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5: Power BI Analytics Report -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="media/powerBIAnalytics.png"
-            alt="Power BI Analytics"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-bold">Power BI Analytics Report</h3>
-            <p class="text-gray-700 mt-2">
-              A Power BI dashboard that demonstrates business insights through
-              interactive data visuals and reports, offering valuable insights for
-              decision-making.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a
-                href="https://github.com/LuckyKhoza-crypto/power-bi-report"
-                target="_blank"
-                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://your-live-site-link.com"
-                target="_blank"
-                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                >Live Demo</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6: Data Analysis with Python -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="media/dataAnalysisPython.png"
-            alt="Data Analysis with Python"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h3 class="text-xl font-bold">Data Analysis with Python</h3>
-            <p class="text-gray-700 mt-2">
-              A Python-based project using libraries like Pandas, NumPy, and Matplotlib
-              to analyze and visualize datasets to uncover hidden patterns and trends.
-            </p>
-            <div class="mt-4 flex space-x-4">
-              <a
-                href="https://github.com/LuckyKhoza-crypto/data-analysis-python"
-                target="_blank"
-                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                ><i class="fab fa-github"></i> GitHub</a
-              >
-              <a
-                href="https://your-live-site-link.com"
-                target="_blank"
-                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-                >Live Demo</a
-              >
-            </div>
-          </div>
+      <!-- Project 1 -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/plantieImage.png" alt="Plantie" />
+        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
+          <h2 class="text-2xl font-bold mb-4">Plantie</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            A Django-based social app for sharing botanical collections. I learned Django Rest Framework, SQL, Google Authentication, and deployment with PythonAnywhere.
+          </p>
+          <a href="https://luckykhoza.pythonanywhere.com/" target="_blank" class="text-2xl text-yellow-400">
+            <i class="fas fa-external-link-alt"></i> Visit
+          </a>
         </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-8 mt-8">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 Lucky Khoza. All Rights Reserved.</p>
+      <!-- Project 2 -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/musicCompose.png" alt="Music Composer" />
+        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
+          <h2 class="text-2xl font-bold mb-4">Music Composer</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            A desktop app built with JavaFX that lets you compose and play music. GitHub repository and YouTube demo available below.
+          </p>
+          <a href="https://youtu.be/2z3EbFgqI8Y" target="_blank" class="text-2xl text-yellow-400">
+            <i class="fab fa-youtube"></i> Watch Demo
+          </a>
+          <a href="https://github.com/Luckykhoza1/Music-Composition-Application" target="_blank" class="text-2xl text-yellow-400 ml-4">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
-    </footer>
 
-    <!-- Mobile Menu Toggle Script -->
-    <script>
-      const menuButton = document.getElementById('menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    </script>
-  </body>
-</html>
-
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white mt-12 py-4">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024 Lucky's Portfolio. All rights reserved.</p>
+      <!-- Project 3 -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/weatherAPI.png" alt="Weather API" />
+        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
+          <h2 class="text-2xl font-bold mb-4">Flask - Weather API</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            A Flask web app that retrieves weather data using Visual Crossing Weather API. It includes Flask-limiter for controlling API requests and Flask routing.
+          </p>
+          <a href="https://youtu.be/gMLIAFKHwKs" target="_blank" class="text-2xl text-yellow-400">
+            <i class="fab fa-youtube"></i> Watch Demo
+          </a>
+          <a href="https://github.com/LuckyKhoza-crypto/Flask" target="_blank" class="text-2xl text-yellow-400 ml-4">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
-    </footer>
 
-    <!-- JavaScript for mobile menu -->
-    <script>
-      const menuButton = document.getElementById('menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
+      <!-- Project 4 -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/learningHTMX.png" alt="DjangoHTMX ToDo" />
+        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
+          <h2 class="text-2xl font-bold mb-4">DjangoHTMX ToDo</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            A task management app built with Django and HTMX, featuring real-time updates, single-click edits, and responsive design.
+          </p>
+          <a href="https://github.com/LuckyKhoza-crypto/Learning-HTMX" target="_blank" class="text-2xl text-yellow-400">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
 
-      menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    </script>
+      <!-- Project 5 -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/cacheProxy.png" alt="Cache Proxy CLI" />
+        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
+          <h2 class="text-2xl font-bold mb-4">Cache Proxy CLI (Python)</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            A Python-based Cache Proxy server that caches and serves HTTP requests, improving performance with in-memory caching.
+          </p>
+          <a href="https://github.com/LuckyKhoza-crypto/cache_proxy_cli" target="_blank" class="text-2xl text-yellow-400">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="flex flex-col md:flex-row gap-8 mb-12">
+        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/timetour.png" alt="TimeTour" />
+        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
+          <h2 class="text-2xl font-bold mb-4">TimeTour</h2>
+          <p class="text-lg leading-relaxed mb-4">
+            A simple web app built with JavaScript for converting time between timezones, inspired by the need to know the time difference between my family and I.
+          </p>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
