@@ -4,144 +4,211 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- TailwindCSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-    <!-- FontAwesome CDN -->
+    <!-- Font Awesome for icons -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
     <title>Portfolio</title>
   </head>
 
-  <body class="bg-gray-900 text-white font-roboto antialiased">
+  <body class="bg-gray-100 text-gray-900">
 
     <!-- Navigation -->
-    <nav class="bg-blue-900 p-5 shadow-lg">
-      <ul class="flex justify-center gap-12 text-xl">
-        <li class="hover:text-yellow-400">
-          <a href="index.html">About</a>
-        </li>
-        <li class="hover:text-yellow-400">
-          <a href="projects.html">Projects</a>
-        </li>
-      </ul>
-    </nav>
+    <header class="text-center p-5 bg-blue-900 text-white shadow-xl">
+      <nav>
+        <ul class="flex justify-center space-x-10 text-xl font-semibold">
+          <li>
+            <a href="index.html" class="hover:text-yellow-400">About</a>
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-yellow-400">Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- Projects Section -->
-    <div class="container mx-auto px-5 py-12">
-
-      <!-- Project 0 -->
-      <div class="flex flex-col md:flex-row gap-8 mb-12">
-        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/talkingTrees.png" alt="Talking Trees" />
-        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
-          <h2 class="text-2xl font-bold mb-4">Talking Trees (AI)</h2>
-          <p class="text-lg leading-relaxed mb-4">
-            This Django app turns a 6000 x 45 Excel sheet into an interactive web app for Whitman College. It uses SQL, Django Rest Framework, Canva SSO, ChatGPT Turbo API, and an Arc GIS map for visualization.
-            <span class="font-bold">Bootstrap</span> is used for the frontend. Watch the demo or access the code below.
-          </p>
-          <a href="https://github.com/LuckyKhoza-crypto/Talking-Trees-AI" target="_blank" class="text-2xl text-yellow-400">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </div>
-      </div>
+    <section class="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
       <!-- Project 1 -->
-      <div class="flex flex-col md:flex-row gap-8 mb-12">
-        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/plantieImage.png" alt="Plantie" />
-        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
-          <h2 class="text-2xl font-bold mb-4">Plantie</h2>
-          <p class="text-lg leading-relaxed mb-4">
-            A Django-based social app for sharing botanical collections. I learned Django Rest Framework, SQL, Google Authentication, and deployment with PythonAnywhere.
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img
+          src="media/talkingTrees.png"
+          alt="Talking Trees project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-center mb-4">Talking Trees (AI)</h2>
+          <p class="text-base text-gray-700 mb-4 leading-relaxed">
+            This Django app turns a 6000 x 45 Excel file into an interactive web app for Whitman College. It uses SQL, Django Rest Framework, Canva SSO, ChatGPT Turbo API, Django Admin, and Arc GIS map integration for easy data visualization. A powerful and exciting project to showcase my skills.
           </p>
-          <a href="https://luckykhoza.pythonanywhere.com/" target="_blank" class="text-2xl text-yellow-400">
-            <i class="fas fa-external-link-alt"></i> Visit
-          </a>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://github.com/LuckyKhoza-crypto/Talking-Trees-AI"
+              target="_blank"
+              class="text-blue-500 text-3xl"
+              aria-label="View on GitHub"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+            <a
+              href="https://youtu.be/2z3EbFgqI8Y"
+              target="_blank"
+              class="text-red-500 text-3xl"
+              aria-label="Watch on YouTube"
+            >
+              <i class="fa fa-youtube-play"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div class="flex flex-col md:flex-row gap-8 mb-12">
-        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/musicCompose.png" alt="Music Composer" />
-        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
-          <h2 class="text-2xl font-bold mb-4">Music Composer</h2>
-          <p class="text-lg leading-relaxed mb-4">
-            A desktop app built with JavaFX that lets you compose and play music. GitHub repository and YouTube demo available below.
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img
+          src="media/plantieImage.png"
+          alt="Plantie project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-center mb-4">Plantie</h2>
+          <p class="text-base text-gray-700 mb-4 leading-relaxed">
+            A social web app where users can post pictures of their plants. Built with Django, SQL, MySQL, and Google Authentication, deployed on PythonAnywhere. I used this project to deepen my knowledge of Django Rest Framework and web app deployment.
           </p>
-          <a href="https://youtu.be/2z3EbFgqI8Y" target="_blank" class="text-2xl text-yellow-400">
-            <i class="fab fa-youtube"></i> Watch Demo
-          </a>
-          <a href="https://github.com/Luckykhoza1/Music-Composition-Application" target="_blank" class="text-2xl text-yellow-400 ml-4">
-            <i class="fab fa-github"></i> GitHub
-          </a>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://luckykhoza.pythonanywhere.com/"
+              target="_blank"
+              class="text-green-500 text-3xl"
+              aria-label="Visit website"
+            >
+              <i class="fa fa-external-link"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div class="flex flex-col md:flex-row gap-8 mb-12">
-        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/weatherAPI.png" alt="Weather API" />
-        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
-          <h2 class="text-2xl font-bold mb-4">Flask - Weather API</h2>
-          <p class="text-lg leading-relaxed mb-4">
-            A Flask web app that retrieves weather data using Visual Crossing Weather API. It includes Flask-limiter for controlling API requests and Flask routing.
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img
+          src="media/musicCompose.png"
+          alt="Music Composer project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-center mb-4">Music Composer</h2>
+          <p class="text-base text-gray-700 mb-4 leading-relaxed">
+            A desktop application developed with JavaFX, allowing users to create, play, save, and load music compositions. Implemented GitHub for version control. Features include instruments like piano and guitar, and various music-editing tools.
           </p>
-          <a href="https://youtu.be/gMLIAFKHwKs" target="_blank" class="text-2xl text-yellow-400">
-            <i class="fab fa-youtube"></i> Watch Demo
-          </a>
-          <a href="https://github.com/LuckyKhoza-crypto/Flask" target="_blank" class="text-2xl text-yellow-400 ml-4">
-            <i class="fab fa-github"></i> GitHub
-          </a>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://youtu.be/2z3EbFgqI8Y"
+              target="_blank"
+              class="text-red-500 text-3xl"
+              aria-label="Watch on YouTube"
+            >
+              <i class="fa fa-youtube-play"></i>
+            </a>
+            <a
+              href="https://github.com/Luckykhoza1/Music-Composition-Application"
+              target="_blank"
+              class="text-blue-500 text-3xl"
+              aria-label="View on GitHub"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Project 4 -->
-      <div class="flex flex-col md:flex-row gap-8 mb-12">
-        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/learningHTMX.png" alt="DjangoHTMX ToDo" />
-        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
-          <h2 class="text-2xl font-bold mb-4">DjangoHTMX ToDo</h2>
-          <p class="text-lg leading-relaxed mb-4">
-            A task management app built with Django and HTMX, featuring real-time updates, single-click edits, and responsive design.
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img
+          src="media/weatherAPI.png"
+          alt="Flask Weather API project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-center mb-4">Flask - Weather API</h2>
+          <p class="text-base text-gray-700 mb-4 leading-relaxed">
+            A Flask app that fetches weather data using the Visual Crossing Weather API, with features for API call management and error handling. I learned how to implement Flask-limiter and handle both POST and GET requests for location data.
           </p>
-          <a href="https://github.com/LuckyKhoza-crypto/Learning-HTMX" target="_blank" class="text-2xl text-yellow-400">
-            <i class="fab fa-github"></i> GitHub
-          </a>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://youtu.be/gMLIAFKHwKs"
+              target="_blank"
+              class="text-red-500 text-3xl"
+              aria-label="Watch on YouTube"
+            >
+              <i class="fa fa-youtube-play"></i>
+            </a>
+            <a
+              href="https://github.com/LuckyKhoza-crypto/Flask"
+              target="_blank"
+              class="text-blue-500 text-3xl"
+              aria-label="View on GitHub"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Project 5 -->
-      <div class="flex flex-col md:flex-row gap-8 mb-12">
-        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/cacheProxy.png" alt="Cache Proxy CLI" />
-        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
-          <h2 class="text-2xl font-bold mb-4">Cache Proxy CLI (Python)</h2>
-          <p class="text-lg leading-relaxed mb-4">
-            A Python-based Cache Proxy server that caches and serves HTTP requests, improving performance with in-memory caching.
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img
+          src="media/cacheProxy.png"
+          alt="Cache Proxy project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-center mb-4">Cache Proxy CLI (Python)</h2>
+          <p class="text-base text-gray-700 mb-4 leading-relaxed">
+            A command-line Python tool for caching HTTP requests, using Python sockets and in-memory caching to improve performance. Includes TTL and cache eviction policies. Implemented via Argparse for user commands.
           </p>
-          <a href="https://github.com/LuckyKhoza-crypto/cache_proxy_cli" target="_blank" class="text-2xl text-yellow-400">
-            <i class="fab fa-github"></i> GitHub
-          </a>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://github.com/LuckyKhoza-crypto/cache_proxy_cli"
+              target="_blank"
+              class="text-blue-500 text-3xl"
+              aria-label="View on GitHub"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Project 6 -->
-      <div class="flex flex-col md:flex-row gap-8 mb-12">
-        <img class="w-full md:w-1/2 rounded-3xl object-cover" src="media/timetour.png" alt="TimeTour" />
-        <div class="w-full md:w-1/2 bg-black p-6 rounded-xl border-2 border-yellow-400">
-          <h2 class="text-2xl font-bold mb-4">TimeTour</h2>
-          <p class="text-lg leading-relaxed mb-4">
-            A simple web app built with JavaScript for converting time between timezones, inspired by the need to know the time difference between my family and I.
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img
+          src="media/timetour.png"
+          alt="TimeTour project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-6">
+          <h2 class="text-2xl font-semibold text-center mb-4">TimeTour</h2>
+          <p class="text-base text-gray-700 mb-4 leading-relaxed">
+            A simple web app that converts time between time zones using JavaScript, HTML, and CSS. It leverages the TimezoneDB API and was inspired by the need to keep track of time differences between family members in South Africa and the United States.
           </p>
-        </div>
-      </div>
-    </div>
-
-  </body>
-</html>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="https://github.com/Lucky
