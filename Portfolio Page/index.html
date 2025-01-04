@@ -1,118 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fonts and Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio | Lucky Khoza</title>
+  </head>
 
-  <!-- Fonts and Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Portfolio | Lucky Khoza</title>
-</head>
+  <body class="bg-gray-50 font-montserrat text-gray-900">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-blue-900 text-white shadow-md">
+      <nav class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold">Lucky Khoza</h1>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="projects.html" class="hover:text-yellow-400 transition"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body class="bg-gray-50 font-montserrat text-gray-900">
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 bg-blue-900 text-white shadow-md">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold">Lucky Khoza</h1>
-      <ul class="flex space-x-6">
-        <li>
-          <a href="index.html" class="hover:text-yellow-400 transition">About</a>
-        </li>
-        <li>
-          <a href="projects.html" class="hover:text-yellow-400 transition">Projects</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+        <!-- Profile Picture -->
+        <img
+          src="media/Khoza.jpg"
+          alt="Lucky Khoza"
+          class="rounded-xl shadow-lg object-cover h-96 w-full"
+        />
 
-  <!-- Main Content -->
-  <main class="container mx-auto p-6">
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-      <!-- Profile Picture -->
-      <img src="media/Khoza.jpg" alt="Lucky Khoza" class="rounded-xl shadow-lg object-cover h-96 w-full" />
-
-      <!-- Bio Section -->
-      <div class="bg-white p-6 rounded-xl shadow-md">
-        <h2 class="text-3xl font-bold text-blue-900 mb-4">Hello, I'm Lucky Khoza!</h2>
-        <p class="text-lg leading-relaxed">
-          I'm a <span class="font-bold">Software Engineer</span> with a Computer Science degree from 
-          <span class="text-blue-600 font-bold">Whitman College</span>. 
-          I specialize in both frontend and backend development, with a strong passion for backend coding and data architecture.
-        </p>
-        <p class="mt-4">
-          Currently, I'm fine-tuning a <span class="text-green-500 font-bold">Machine Learning model </span>
-          using <span class="text-blue-500 font-bold">HuggingFace Transformers and Pipelines,</span> which I'll connect to my current job's ticketing system to streamline some of our IT processes.
-        </p>
-        <p class="mt-4 text-yellow-600 font-semibold">
-          If you're interested in working together or hiring me, let's connect!
-        </p>
-        <!-- Social Links -->
-        <div class="mt-6 flex space-x-4">
-          <a href="https://www.linkedin.com/in/lucky-khoza/" class="fa fa-linkedin text-3xl hover:text-blue-600 transition" target="_blank" aria-label="LinkedIn"></a>
-          <a href="mailto:khozal@whitman.edu" class="fa fa-envelope text-3xl hover:text-red-500 transition" target="_blank" aria-label="Email"></a>
-          <a href="https://github.com/LuckyKhoza-crypto" class="fa fa-github text-3xl hover:text-gray-900 transition" target="_blank" aria-label="GitHub"></a>
+        <!-- Bio Section -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">
+            Hello, I'm Lucky Khoza!
+          </h2>
+          <p class="text-lg leading-relaxed">
+            I'm a <span class="font-bold">Software Engineer</span> with a
+            Computer Science degree from
+            <span class="text-blue-600 font-bold">Whitman College</span>. I
+            specialize in both frontend and backend development, with a strong
+            passion for backend coding and data architecture.
+          </p>
+          <p class="mt-4">
+            Currently, I'm fine-tuning a
+            <span class="text-green-500 font-bold"
+              >Machine Learning model
+            </span>
+            using
+            <span class="text-blue-500 font-bold"
+              >HuggingFace Transformers and Pipelines,</span
+            >
+            which I'll connect to my current job's ticketing system to
+            streamline some of our IT processes.
+          </p>
+          <p class="mt-4 text-yellow-600 font-semibold">
+            If you're interested in working together or hiring me, let's
+            connect!
+          </p>
+          <!-- Social Links -->
+          <div class="mt-6 flex space-x-4">
+            <a
+              href="https://www.linkedin.com/in/lucky-khoza/"
+              class="fa fa-linkedin text-3xl hover:text-blue-600 transition"
+              target="_blank"
+              aria-label="LinkedIn"
+            ></a>
+            <a
+              href="mailto:khozal@whitman.edu"
+              class="fa fa-envelope text-3xl hover:text-red-500 transition"
+              target="_blank"
+              aria-label="Email"
+            ></a>
+            <a
+              href="https://github.com/LuckyKhoza-crypto"
+              class="fa fa-github text-3xl hover:text-gray-900 transition"
+              target="_blank"
+              aria-label="GitHub"
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Skills Section -->
-    <section class="mt-12">
-      <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="text-center">
-          <i class="fa fa-code text-4xl text-blue-600"></i>
-          <p class="mt-2 text-lg font-semibold">Programming</p>
-          <p class="text-sm text-gray-700">Python, JavaScript, Java, C</p>
+      <!-- Skills Section -->
+      <section class="mt-12">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">
+          Skills
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <i class="fa fa-code text-4xl text-blue-600"></i>
+            <p class="mt-2 text-lg font-semibold">Programming</p>
+            <p class="text-sm text-gray-700">Python, JavaScript, Java, C</p>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-database text-4xl text-green-600"></i>
+            <p class="mt-2 text-lg font-semibold">Databases</p>
+            <p class="text-sm text-gray-700">SQL, PostgreSQL</p>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-cloud text-4xl text-purple-600"></i>
+            <p class="mt-2 text-lg font-semibold">Cloud</p>
+            <p class="text-sm text-gray-700">AWS (EC2, S3, Lambda)</p>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-cogs text-4xl text-yellow-500"></i>
+            <p class="mt-2 text-lg font-semibold">Methodologies</p>
+            <p class="text-sm text-gray-700">Agile, DevOps</p>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-laptop text-4xl text-blue-500"></i>
+            <p class="mt-2 text-lg font-semibold">Frameworks</p>
+            <p class="text-sm text-gray-700">
+              Django, Flask, HTMX, Redis, React, ReactNative
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-line-chart text-4xl text-green-500"></i>
+            <p class="mt-2 text-lg font-semibold">Machine Learning</p>
+            <p class="text-sm text-gray-700">
+              Data Analysis, Fine-Tuning, Pytorch, Transformers
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-users text-4xl text-orange-500"></i>
+            <p class="mt-2 text-lg font-semibold">IT Tools</p>
+            <p class="text-sm text-gray-700">
+              Active Directory, Autopilot, Scripting, Ticketing Sys
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fa fa-windows text-4xl text-blue-600"></i>
+            <p class="mt-2 text-lg font-semibold">Microsoft Tools</p>
+            <p class="text-sm text-gray-700">
+              Office 365, PowerApps, SharePoint
+            </p>
+          </div>
         </div>
-        <div class="text-center">
-          <i class="fa fa-database text-4xl text-green-600"></i>
-          <p class="mt-2 text-lg font-semibold">Databases</p>
-          <p class="text-sm text-gray-700">SQL, PostgreSQL</p>
-        </div>
-        <div class="text-center">
-          <i class="fa fa-cloud text-4xl text-purple-600"></i>
-          <p class="mt-2 text-lg font-semibold">Cloud</p>
-          <p class="text-sm text-gray-700">AWS (EC2, S3, Lambda)</p>
-        </div>
-        <div class="text-center">
-          <i class="fa fa-cogs text-4xl text-yellow-500"></i>
-          <p class="mt-2 text-lg font-semibold">Methodologies</p>
-          <p class="text-sm text-gray-700">Agile, DevOps</p>
-        </div>
-        <div class="text-center">
-          <i class="fa fa-laptop text-4xl text-blue-500"></i>
-          <p class="mt-2 text-lg font-semibold">Frameworks</p>
-          <p class="text-sm text-gray-700">Django, Flask, HTMX, Redis</p>
-        </div>
-        <div class="text-center">
-          <i class="fa fa-line-chart text-4xl text-green-500"></i>
-          <p class="mt-2 text-lg font-semibold">Machine Learning</p>
-          <p class="text-sm text-gray-700">Data Analysis, Fine-Tuning, Pytorch, Transformers</p>
-        </div>
-        <div class="text-center">
-          <i class="fa fa-users text-4xl text-orange-500"></i>
-          <p class="mt-2 text-lg font-semibold">IT Tools</p>
-          <p class="text-sm text-gray-700">Active Directory, Autopilot, Scripting, Ticketing Sys</p>
-        </div>
-        <div class="text-center">
-          <i class="fa fa-windows text-4xl text-blue-600"></i>
-          <p class="mt-2 text-lg font-semibold">Microsoft Tools</p>
-          <p class="text-sm text-gray-700">Office 365, PowerApps, SharePoint</p>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white text-center py-4 mt-6">
-    <p>© 2024 Lucky Khoza</p>
-    <p>Icons by <a href="https://fontawesome.com/" class="underline">Font Awesome</a></p>
-  </footer>
-</body>
-
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4 mt-6">
+      <p>© 2024 Lucky Khoza</p>
+      <p>
+        Icons by
+        <a href="https://fontawesome.com/" class="underline">Font Awesome</a>
+      </p>
+    </footer>
+  </body>
 </html>
